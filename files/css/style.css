@@ -1,0 +1,303 @@
+body.main_page {
+	background-color: #F7F8FA ;
+	margin-right: auto;
+	margin-left: auto;
+	overflow-x: hidden;
+	max-width: 2560px;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+.front_wrapper{
+    background-image: linear-gradient(180deg, #80B7FF 0%, #4981FD 100%);
+	position: relative;
+	width: 100%;
+	float: left;    
+    background-size: 100% 100%;
+    background-position: 100%;
+    max-height: 510px;
+}
+.footercurve{
+    margin-top: -1px;
+}
+.container{
+	max-width: 1240px;
+	padding: 0px 15px;
+	margin-right: auto;
+	margin-left: auto;
+}  
+nav.navbar{
+	padding: 0;
+	padding-top: 60px;
+}
+.logo img{
+    max-width: 230px;
+}
+nav .navbar-brand{
+    color: #FFFFFF;
+    font-family: 'BebasNeueBold';
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -0.96px;
+    line-height: 48px;
+    text-align: left;
+}
+.navbar-expand-md .navbar-nav {
+      width: 100%;
+      justify-content: flex-end;
+      align-items: center;
+}
+.navbar-nav .nav-item{
+      padding-left: 32px;
+}
+ul.navbar-nav li{
+      padding-left: 50px;
+      justify-content: center;
+}
+ul.navbar-nav li a{
+    color: #FFFFFF;
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: right;
+    margin-top: 0px;
+}
+.col.text_left{
+    margin: auto; 
+    padding-left: 0;
+    padding-right: 0;    
+}
+h1.text_title {
+    word-spacing: 1px;
+    color: #FFFFFF;
+    font-family: 'Roboto',sans-serif;
+    font-size: 51px;
+    font-weight: 900;
+    max-width: 567px !important;
+    width: 567px;
+    line-height: 51px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+h4.text_content{
+    color: #FFFFFF;
+    font-family: 'Roboto',sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    max-width:500px;
+    line-height: 31px;
+    text-align: left; 
+    padding-bottom: 40px;
+}
+img{
+    width: 100%;
+}
+.image_right{	
+	max-width: 49%;
+	width: 100%;
+	min-height: 478px;
+	position: absolute;
+	right: 0;
+	top: 32%;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 0;
+}
+/* .text_button button{
+    border-radius: 50px;
+	box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.15);
+	font-family: 'OpenSans',Sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: -0.48px;
+	line-height: 24px;
+    text-align: center;
+} 
+.text_button button.btn-positive{
+    background-color: #FFE799;
+	color: #1D2534;
+	border-color: #FFE799;
+    padding: 17.5px 85px;
+} */
+.coin_wrapper{
+    width: 100%;
+    float: left;
+    height: 340px;
+    background-color: #0067FF;
+    padding: 0 15px;
+    padding-bottom: 58px;
+    margin-top: 115px;
+}
+.coin_cardwrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: -160px;
+    margin-bottom: 51px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.coin_cardwrapper .card{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 44px 0 rgba(0, 0, 0, 0.05);
+    width: 23%;
+    margin: 1%;
+    margin-bottom: 20px;
+    border:none;
+    padding:66px 40px 63px 40px;
+}
+.coin_cardwrapper .card .card_icon{
+    height: 110px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 37px auto;
+    border-radius: 100%;
+}
+.tezos_bg{
+    background-color: #FFE799;
+}
+.cardano_bg{
+background-color: #5E95FF;
+}
+.coin_cardwrapper .card .card_icon.tezos_bg img{
+width: 44px;
+}
+.coin_cardwrapper .card .card_icon.cardano_bg img {
+    width: 68px;
+}
+.celo_bg {
+    background-color: #E4FFB0;
+}
+.kusama-bg {
+    background-color: #000000;
+}
+.coin_cardwrapper .card .card_icon.celo_bg img {
+    width: 60px;
+}
+.coin_cardwrapper .card .card_title h3{
+    color: #1D2534;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    width: 220px;
+    text-align: center;
+}
+.coin_wrapper .title_wrap h2{
+      color: #FFFFFF;
+      font-family: 'Roboto',sans-serif;
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 53px;
+      margin-bottom: 0;
+      text-align: center;
+}
+/*** Service Section ***/
+.servicewrapper{
+    width: 100%;
+    float: left;
+    padding-bottom: 32px;
+    padding-top: 50px;
+    margin-top: 0;
+}
+.serviceswrapper .service{
+	display: flex;
+	position: relative;
+}
+.service.section1 .servicewrapper_left,
+.service.secure .servicewrapper_left{
+    max-width: 44%;
+    width: 100%;
+    margin-right: 98px;
+}
+.service.profit .servicewrapper_right{
+    max-width:600px;
+    width: 100%
+}
+.service.profit .servicewrapper_right .imgwrapper{
+    margin-left: 10px;
+}
+.service.section1 .servicewrapper_left .imgwrapper{
+    margin-right: 10px;
+}
+.service.profit .servicewrapper_left {
+    max-width: 44%;
+    width: 100%;
+    margin-left: 98px;
+}
+.service.section1 .servicewrapper_right,
+.service.secure .servicewrapper_right{
+    max-width:600px;
+    width: 100%
+}
+.service.profit .servicewrapper_left{
+    max-width:600px;
+    width: 100%
+}
+.servicewrapper .row{
+    padding-top: 10px;
+}
+.service.profit .servicewrapper_left ,
+.service.section1 .servicewrapper_right, .service.secure .servicewrapper_right {
+    padding-top: 50px;
+    margin-top: 20px;
+
+}
+.servicewrapper h3.title_wrapper{
+    color: #1D2534;
+    font-family: 'Roboto',sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    width: 660px;
+    text-align: left;
+}  
+.servicewrapper h4.description{   
+    color: #777E8D;
+    font-family: 'Roboto',sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    width: 537px;
+    text-align: left;
+    }  
+.ovel2{    
+    border-radius: 100%;
+    width: 74px !important;
+    height: 74px;
+}
+.ovel1{
+    border-radius: 100%;
+    width: 166px !important;
+    height: 166px;
+}
+
+/**** Media Queries ****/
+
+@media(max-width: 767px){
+	.navbar-nav .nav-item {
+		padding: 5px;
+	    padding-left: 10px;
+	    width: 100%;
+	}
+	
+    
+
+
+}
+
+@media(min-width: 768px) and (max-width: 1024px){
+	nav.navbar {
+	    padding-top: 20px;
+    }
+    ul.navbar-nav li a:first-child {
+	    font-size: 20px;
+	}
+}
+
+
+

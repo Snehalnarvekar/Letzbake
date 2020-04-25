@@ -48,9 +48,6 @@ nav .navbar-brand{
       justify-content: flex-end;
       align-items: center;
 }
-.navbar-nav .nav-item{
-      padding-left: 32px;
-}
 ul.navbar-nav li{
       padding-left: 50px;
       justify-content: center;

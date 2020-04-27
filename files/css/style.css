@@ -247,22 +247,18 @@ background-color: #5E95FF;
 }
 .service.profit .servicewrapper_right{
     width: 100%;
-
-
 }
 .service.profit .imagewrapper{
    position: relative;
-	padding-left: 5%;
     max-width: 600px;
     margin-left: auto;
 }
-.service.about .about_oval{
-    width: 37%;
-}
+
 .service.profit .servicewrapper_left, .service.about .servicewrapper_left {
     width: 100%;
-    padding-top: 50px;
     margin-top: 50px;
+    padding-top: 50px;
+    padding-left: 98px;
 }
 .service.secure .imagewrapper{
     margin-left: 60px;
@@ -276,8 +272,7 @@ background-color: #5E95FF;
     font-size: 36px;
     font-weight: 400;
     line-height: 43px;
-    width: 660px;
-    text-align: left;
+    width: 660px; 
 }  
 .servicewrapper h4.description{   
     color: #777E8D;
@@ -286,7 +281,6 @@ background-color: #5E95FF;
     font-weight: 400;
     line-height: 35px;
     width: 598px;
-    text-align: left;
 }  
 .service.section1 .oval {
     position: absolute;
@@ -302,29 +296,25 @@ background-color: #5E95FF;
     transform: translateY(-50%);
 } 
 .service.about .about_oval{
+    width: 50%;  
+}
+.service.about .about_oval {
     position: absolute;
     right: 0;
-    max-height: 600px;
-    max-width: 600px;
+    max-width: 400px;
 }
 .service.about .about_oval .oval-small{
     position: absolute;
     z-index: 1;
     right: -50px;
-    width: 150px;
-    height: 150px;
+    max-width: 200px;
     top: 50%;
     transform: translateY(-50%);
 }
-/* .servicewrapper .service.about.row h4.description{
+.service.about  h4.description{ 
     margin-bottom: 20px;
+    width: 740px !important;
 }
-.serviceswrapper .secure .servicewrapper_right{
-    position: relative;
-    top: -290px;
-} */
-
-
 footer{
 	width: 100%;
 	background-color: #000000;
@@ -542,11 +532,7 @@ footer{
     .justify-content-center{
         justify-content: center;
     }
-    .serviceswrapper {
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-    }
+    
     
 
 

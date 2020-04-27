@@ -1,9 +1,17 @@
-body.main_page {
+html,
+body {
 	background-color: #F7F8FA ;
 	margin-right: auto;
 	margin-left: auto;
 	overflow-x: hidden;
-	max-width: 2560px;
+	max-width: 2560px !important;
+}
+html,
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 *{
 	padding: 0;
@@ -22,7 +30,6 @@ body.main_page {
     margin-top: -1px;
 }
 .container{
-
 	padding: 0px 15px;
 	margin-right: auto;
 	margin-left: auto;
@@ -75,7 +82,7 @@ img{
 .align-item-center{
     align-items: center;
 }
-.row{
+.homesection .row{
     display: flex;
     flex-wrap: wrap;
 }
@@ -142,13 +149,15 @@ img{
     padding-bottom: 60px;
     margin-top: 115px;
 }
- 
+.coin_wrapper .container{
+    padding-right: 0;
+    padding-left: 0;
+} 
 .coin_cardwrapper{
     display: flex;
+    justify-content: space-between;
     margin-top: -160px;
     margin-bottom: 51px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 .coin_cardwrapper .card{
     background-color: #FFFFFF;
@@ -158,6 +167,8 @@ img{
     margin-bottom: 20px;
     border:none;
     padding:66px 40px 66px 40px;
+    max-width: 295px;
+    max-height: 320px;
 }
 .coin_cardwrapper .card .card_icon{
     height: 110px;
@@ -175,7 +186,7 @@ img{
 background-color: #5E95FF;
 }
 .coin_cardwrapper .card .card_icon.tezos_bg img{
-width: 44px;
+    width: 44px;
 }
 .coin_cardwrapper .card .card_icon.cardano_bg img {
     width: 68px;
@@ -208,54 +219,56 @@ width: 44px;
       text-align: center;
 }
 /*** Service Section ***/
-.servicewrapper{
+.servicewrapper {
     width: 100%;
-    float: left;
     padding-bottom: 32px;
     padding-top: 50px;
     margin-top: 0;
+    
 }
-.serviceswrapper .service{
-	display: flex;
-	position: relative;
+
+.serviceswrapper .row {
+    display: flex;
+    flex-wrap: wrap;
 }
 .service.section1 .servicewrapper_left,
-.service.secure .servicewrapper_left{
-    max-width: 44%;
+.service.secure  .servicewrapper_left{
+    max-width: 650px;
     width: 100%;
-    margin-right: 98px;
-}
-.service.profit .servicewrapper_right{
-    max-width:600px;
-    width: 100%
-}
-.service.profit .servicewrapper_right .imgwrapper{
-    margin-left: 10px;
-}
-.service.section1 .servicewrapper_left .imgwrapper{
-    margin-right: 10px;
-}
-.service.profit .servicewrapper_left {
-    max-width: 44%;
-    width: 100%;
-    margin-left: 98px;
+    margin-right: 26px;
+    padding-top: 40px;
+    
 }
 .service.section1 .servicewrapper_right,
-.service.secure .servicewrapper_right{
-    max-width:600px;
-    width: 100%
+.service.secure  .servicewrapper_right{
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 75px;
 }
-.service.profit .servicewrapper_left{
-    max-width:600px;
-    width: 100%
+.service.profit .servicewrapper_right{
+    width: 100%;
+
+
+}
+.service.profit .imagewrapper{
+   position: relative;
+	padding-left: 5%;
+    max-width: 600px;
+    margin-left: auto;
+}
+.service.about .about_oval{
+    width: 37%;
+}
+.service.profit .servicewrapper_left, .service.about .servicewrapper_left {
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+.service.secure .imagewrapper{
+    margin-left: 60px;
 }
 .servicewrapper .row{
-    padding-top: 10px;
-}
-.service.profit .servicewrapper_left ,
-.service.section1 .servicewrapper_right, .service.secure .servicewrapper_right {
-    padding-top: 50px;
-    margin-top: 20px;
+    padding-top: 15px;
 }
 .servicewrapper h3.title_wrapper{
     color: #1D2534;
@@ -272,18 +285,53 @@ width: 44px;
     font-size: 24px;
     font-weight: 400;
     line-height: 35px;
-    width: 537px;
+    width: 598px;
     text-align: left;
-    }  
-.ovel2{    
-    border-radius: 100%;
-    width: 74px !important;
-    height: 74px;
+}  
+.service.section1 .oval {
+    position: absolute;
+    right: 0;
+    width: 100px;
 }
-.ovel1{
-    border-radius: 100%;
-    width: 166px !important;
-    height: 166px;
+ .service.section1 .oval .oval2 {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+.service.about .about_oval{
+    position: absolute;
+    right: 0;
+    max-height: 600px;
+    max-width: 600px;
+}
+.service.about .about_oval .oval-small{
+    position: absolute;
+    z-index: 1;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* .servicewrapper .service.about.row h4.description{
+    margin-bottom: 20px;
+}
+.serviceswrapper .secure .servicewrapper_right{
+    position: relative;
+    top: -290px;
+} */
+
+
+footer{
+	width: 100%;
+	background-color: #000000;
+}
+.footer_img .logo img{
+    size: 10px;
+
 }
 
 /**** Media Queries ****/
@@ -316,7 +364,10 @@ width: 44px;
         background-color: #7bb1fa;
         height: 70px;
     } */
-
+    .text_box.col-lg-6{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     h1.text_title {    
         font-size: 27px;
         line-height: 31px;
@@ -326,8 +377,8 @@ width: 44px;
         margin-right: auto;
     }
     h4.text_content{
-        font-size: 17px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height: 27px;
         text-align: center; 
         padding-bottom: 20px;
         margin-left: auto;
@@ -338,39 +389,113 @@ width: 44px;
 		max-height: 100%;
 		display: flex;
 		flex-direction: column;
-	}
+    }
+  
     .coin_cardwrapper{
+        display: flex;
         flex-wrap: wrap;
-        padding-top: 150px;
+        justify-content: center;
+        margin-top:10px; 
     }
     .coin_wrapper{
         height: auto;
-        padding-top: 32px;
+        padding-top: 15px;
         padding-bottom: 40px;
-        margin-top: 10px;
+        margin-top: 26px;
     }
     .coin_cardwrapper .card{
         margin-bottom:5px;
         border:none;
-        padding:20px 78px 20px 78px;
-    }
-    .coin_wrapper .title_wrap h2{
-        font-size: 34px;
-        font-weight: 400;
-        margin-bottom: 2px;
-    }
-    .justify-content-center{
-    justify-content: center;
+        padding:20x 40px 20px 40px;
+        max-height: 275px;
+        max-width: 230px;
     }
     .coin_cardwrapper .card .card_title h3{  
-        font-size: 26px;
-        text-align: center;
+        font-size: 25px;
+        line-height: 26px;
+        width: 150px;
     }
     .coin_wrapper .title_wrap h2{
-        text-align: center;
-        font-size: 36px;
+        font-size: 30px;
+        line-height: 40px;
     }
-}
+    .coin_cardwrapper .card .card_icon{
+        height: 90px;
+	    width: 90px;
+	    margin: 0px auto 20px auto;
+    }    
+    .coin_cardwrapper .card .card_icon.tezos_bg {
+        width: 84px;
+    }
+    .coin_cardwrapper .card .card_icon.cardano_bg  {
+        width: 80px;
+    }
+    .coin_cardwrapper .card .card_icon.celo_bg img {
+        width: 48px;
+    }
+   
+    .servicewrapper.service{
+        padding-bottom: 32px;
+        padding-top: 10px;
+        flex-wrap: wrap;
+    }
+    .servicewrapper h3.title_wrapper{
+        font-size: 25px;
+        line-height: 33px;
+        text-align: center;
+        padding-bottom: 2px;
+    }  
+    .servicewrapper h4.description{   
+        font-size: 16px;
+        line-height: 24px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+    .service.section1.row, .service.secure.row{
+        flex-direction: column-reverse;
+    }
+    
+    .servicewrapper_right .oval {
+        position: absolute;
+        right: 0;
+        width: 100px;
+    }
+    .service.profit.row .imagewrapper {
+        top: 20px;
+        padding-left: 5%;
+        max-width: 540px;
+    }
+    .service.secure.row .imagewrapper {
+        max-width: 450px;
+        top: 15px;
+        justify-items: center;
+    }
+    .serviceswrapper .secure.row{
+        top: -40px;
+    }
+    .service.section1 .servicewrapper_right,
+     .service.secure .servicewrapper_right{
+        width: 100%;
+        margin-left: 0;
+        padding-top: 10px;
+    }
+    .service.profit .servicewrapper_left,
+     .service.about .servicewrapper_left{
+        width: 100%;
+        margin-left: 0;
+        padding-top: 10px;
+    }
+    .service.about .servicewrapper_right{
+        display: none;
+    }
+    
+
+
+}   
 
 @media(min-width: 768px) and (max-width: 1024px){
 	nav.navbar {
@@ -398,32 +523,34 @@ width: 44px;
         margin-left: auto;
         margin-right: auto;
     }
-	.row{
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: -.75rem;
-        margin-left: -.75rem;
-    }
     .homesection{
 		height: auto;
         max-height: 100%;
     }
     .coin_cardwrapper{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         margin-top:10px; 
     }    
-	.coin_cardwrapper{
-        flex-wrap: wrap;
-    }
     .coin_wrapper{
         height: auto;
-        padding-top: 10px;
+        padding-top: 15px;
         padding-bottom: 40px;
         margin-top: 30px;
     }
     .justify-content-center{
         justify-content: center;
-        }
+    }
+    .serviceswrapper {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    
+
+
+
 }
 
 

@@ -30,6 +30,7 @@ body {
     margin-top: -1px;
 }
 .container{
+    max-width: 1240px;
 	padding: 0px 15px;
 	margin-right: auto;
 	margin-left: auto;
@@ -68,31 +69,31 @@ ul.navbar-nav li a{
     text-align: right;
     margin-top: 0px;
 }
-.collapsebutton{
+.navbar-toggler.collapsebutton{
     float: right;
-    background-color: #FFFFFF;
-    background-position: right;
-    background-size: cover;
-    height: 35px;
-    width: 35px;
+	background-image: url(..files/icon8-menu.svg);
+	background-position: right;
+	background-size: cover;
+	height: 35px;
+	width: 35px;
+	margin-top: -8px;
 }
 img{
     width: 100%;
 }
-.align-item-center{
-    align-items: center;
-}
+
 .homesection .row{
     display: flex;
     flex-wrap: wrap;
 }
 .text_container{
+    position: relative;
     padding-top: 30px;
 }
 .text_box.col-lg-6{
+    position: unset;
     padding-top:12px;
-    padding-left: 0;
-    padding-right: 0;
+   
 }
  h1.text_title {
     word-spacing: 1px;
@@ -100,17 +101,15 @@ img{
     font-family: 'Roboto',sans-serif;
     font-size: 51px;
     font-weight: 900;
-    max-width: 567px !important;
     line-height: 51px;
     text-align: left;
-    padding-bottom: 20px;
+    padding-bottom: 45px;
 }
  h4.text_content{
     color: #FFFFFF;
     font-family: 'Roboto',sans-serif;
     font-size: 21px;
     font-weight: 400;
-    max-width:500px;
     line-height: 31px;
     text-align: left; 
     padding-bottom: 40px;
@@ -118,7 +117,7 @@ img{
 .image_box {	
     max-width: 579px ;
     min-height: 495px ;
-	position: absolute;
+	position: unset;
     padding-right: 0;
     top: 32%;
     padding-top: 10px;
@@ -155,10 +154,10 @@ img{
 } 
 .coin_cardwrapper{
     display: flex;
-    justify-content: space-between;
     margin-top: -160px;
     margin-bottom: 51px;
 }
+
 .coin_cardwrapper .card{
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -167,8 +166,7 @@ img{
     margin-bottom: 20px;
     border:none;
     padding:66px 40px 66px 40px;
-    max-width: 295px;
-    max-height: 320px;
+    width: 100%;
 }
 .coin_cardwrapper .card .card_icon{
     height: 110px;
@@ -176,7 +174,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px auto 37px auto;
+    margin: 0px auto;
     border-radius: 100%;
 }
 .tezos_bg{
@@ -186,10 +184,10 @@ img{
 background-color: #5E95FF;
 }
 .coin_cardwrapper .card .card_icon.tezos_bg img{
-    width: 44px;
+    width: 44%;
 }
 .coin_cardwrapper .card .card_icon.cardano_bg img {
-    width: 68px;
+    width: 68%;
 }
 .celo_bg {
     background-color: #E4FFB0;
@@ -198,7 +196,7 @@ background-color: #5E95FF;
     background-color: #000000;
 }
 .coin_cardwrapper .card .card_icon.celo_bg img {
-    width: 60px;
+    width: 60%;
 }
 .coin_cardwrapper .card .card_title h3{
     color: #1D2534;
@@ -206,7 +204,7 @@ background-color: #5E95FF;
     font-size: 36px;
     font-weight: 400;
     line-height: 43px;
-    width: 220px;
+    margin-top:25px;
     text-align: center;
 }
 .coin_wrapper .title_wrap h2{
@@ -223,10 +221,8 @@ background-color: #5E95FF;
     width: 100%;
     padding-bottom: 32px;
     padding-top: 50px;
-    margin-top: 0;
-    
+    margin-top: 0;   
 }
-
 .serviceswrapper .row {
     display: flex;
     flex-wrap: wrap;
@@ -331,7 +327,8 @@ footer{
         max-width: 152px;
     }
     nav.navbar {
-        padding-top: 20px;
+        padding-top: 2px;
+		display: flex;
     }
     .navbar-nav .nav-item {
 		padding: 5px;
@@ -345,19 +342,34 @@ footer{
     }
     button.navbar-toggler {
         margin-top: 10px;
+        outline: none;
     }
-    /* .homesection .head_section{
+    #navbarResponsive{
+		background: #fff;
+		padding: 20px 10px;
+		margin-left: -15px;
+		margin-right: -15px;
+    }
+    .homesection .text_container{
+    padding-top: 96px;
+}
+    .homesection .container{
+    position: relative;
+    z-index: 1;
+    }
+    .head_section{
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         background-color: #7bb1fa;
         height: 70px;
-    } */
+    } 
     .text_box.col-lg-6{
         padding-left: 10px;
         padding-right: 10px;
     }
+    
     h1.text_title {    
         font-size: 27px;
         line-height: 31px;
@@ -365,10 +377,11 @@ footer{
         padding-top: 0px;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 20px;
     }
     h4.text_content{
         font-size: 16px;
-        line-height: 27px;
+        line-height: 22px;
         text-align: center; 
         padding-bottom: 20px;
         margin-left: auto;
@@ -380,7 +393,6 @@ footer{
 		display: flex;
 		flex-direction: column;
     }
-  
     .coin_cardwrapper{
         display: flex;
         flex-wrap: wrap;
@@ -396,14 +408,14 @@ footer{
     .coin_cardwrapper .card{
         margin-bottom:5px;
         border:none;
-        padding:20x 40px 20px 40px;
-        max-height: 275px;
-        max-width: 230px;
+        padding:40px 50px 40px 50px;
+        max-height: 230px;
+        max-width: 400px;
     }
     .coin_cardwrapper .card .card_title h3{  
         font-size: 25px;
         line-height: 26px;
-        width: 150px;
+        margin-top: 0;
     }
     .coin_wrapper .title_wrap h2{
         font-size: 30px;
@@ -413,21 +425,12 @@ footer{
         height: 90px;
 	    width: 90px;
 	    margin: 0px auto 20px auto;
-    }    
-    .coin_cardwrapper .card .card_icon.tezos_bg {
-        width: 84px;
-    }
-    .coin_cardwrapper .card .card_icon.cardano_bg  {
-        width: 80px;
-    }
-    .coin_cardwrapper .card .card_icon.celo_bg img {
-        width: 48px;
-    }
+    }                                                            
+    
    
     .servicewrapper.service{
         padding-bottom: 32px;
         padding-top: 10px;
-        flex-wrap: wrap;
     }
     .servicewrapper h3.title_wrapper{
         font-size: 25px;
@@ -442,10 +445,9 @@ footer{
         margin-left: auto;
         text-align: center;
         padding-left: 0;
-        padding-right: 0;
-        
+        padding-right: 0;                                                             
     }
-    .service.section1.row, .service.secure.row{
+    .service.section1, .service.secure{
         flex-direction: column-reverse;
     }
     
@@ -454,12 +456,12 @@ footer{
         right: 0;
         width: 100px;
     }
-    .service.profit.row .imagewrapper {
+    .service.profit .imagewrapper {
         top: 20px;
         padding-left: 5%;
         max-width: 540px;
     }
-    .service.secure.row .imagewrapper {
+    .service.secure .imagewrapper {
         max-width: 450px;
         top: 15px;
         justify-items: center;
@@ -489,10 +491,13 @@ footer{
 
 @media(min-width: 768px) and (max-width: 1024px){
 	nav.navbar {
-        padding-top: 23px;
+        padding-top: 22px;
     }
     ul.navbar-nav li a:first-child {
 	    font-size: 20px;
+    }
+    .navbar-nav .nav-item{
+		padding-left: 15px;
     }
     .logo img{
         max-width: 230px;
@@ -500,42 +505,76 @@ footer{
     h1.text_title {    
         font-size: 37px;
         line-height: 41px;
-        text-align: center; 
-        padding-top: 0px;
-        margin-left: auto;
-        margin-right: auto;
+        padding-top: 0px;  
+        margin-right: 0;  
+    }
+    .image_box {	
+        width: 50%;
+        position: unset;
+        top: 0;
+        padding-right: 2%;
+        padding-top: 0;
+        padding-left: 2%;
+    }
+    .text_box{
+        width: 50%;
+        position: unset;
     }
     h4.text_content{
-        font-size: 22px;
-        line-height: 36px;
-        text-align: center; 
-        padding-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 18px;
+        line-height: 24px;
+        padding-bottom:18px;
+        margin-right: 0; 
     }
     .homesection{
 		height: auto;
         max-height: 100%;
     }
+    
     .coin_cardwrapper{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin-top:10px; 
-    }    
+    }
     .coin_wrapper{
         height: auto;
         padding-top: 15px;
         padding-bottom: 40px;
-        margin-top: 30px;
+        margin-top: 26px;
     }
-    .justify-content-center{
-        justify-content: center;
+    .coin_cardwrapper .card{
+        margin-bottom:5px;
+        border:none;
+        padding:30px 50px 30px 50px;
+        max-height: 275px;
+        max-width: 300px;
+    }   
+
+    .serviceswrapper .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
-    
-    
-
-
+    .servicewrapper h3.title_wrapper{
+        font-size: 30px;
+        line-height: 38px;
+        padding-bottom: 2px;
+    }  
+    .servicewrapper h4.description{   
+        font-size: 20px;
+        line-height: 28px;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;  
+    }
+    .service.section1 .servicewrapper_left,
+    .service.secure  .servicewrapper_left{
+    max-width: 400px;
+    margin-right: 0;
+    padding-top: 40px;
+    }
 
 }
 
